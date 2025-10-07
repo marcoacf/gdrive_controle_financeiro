@@ -1,7 +1,7 @@
 import streamlit as st
 from banco_de_dados import criar_tabela, inserir_lancamento, listar_lancamentos, editar_lancamento, excluir_lancamento
 from utils import (
-    gerar_opcoes_grupo, gerar_opcoes_natureza, gerar_opcoes_tipo,
+    gerar_opcoes_grupo, gerar_opcoes_natureza, gerar_opcoes_tipo, gerar_opcoes_categoria,
     gerar_opcoes_efetivado, validar_valor, formatar_valor
 )
 
@@ -20,8 +20,7 @@ with st.form("form_lancamento"):
     col4, col5, col6 = st.columns(3)
     data = col4.date_input("Data do lançamento")
     mes_ref = col5.date_input("Mês de referência")
-    categoria = col6.text_input("Categoria")
-
+    categoria = col6.selectbox("Categoria", gerar_opcoes_categoria())
     descricao = st.text_input("Descrição")
     
     col7, col8, col9 = st.columns(3)
