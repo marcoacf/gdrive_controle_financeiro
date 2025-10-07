@@ -20,7 +20,7 @@ with st.form("form_lancamento"):
     col4, col5, col6 = st.columns(3)
     data = col4.date_input("Data do lançamento")
     mes_ref = col5.date_input("Mês de referência")
-    categoria = col6.selectbox("Categoria", gerar_opcoes_categoria())
+    categoria = col6.selectbox("Categoria", gerar_opcoes_categoria(), accept_new_options=True)
     descricao = st.text_input("Descrição")
     
     col7, col8, col9 = st.columns(3)
