@@ -53,6 +53,15 @@ def gerar_opcoes_grupo():
         "Moradia", "Investimentos", "Tributos", "Reserva", "Extra", "Outros"
     ]
 
+def gerar_opcoes_categoria():
+    return [
+        "Vestuário", "Presentes", "Medicamentos", "Educação", "Transporte", "Óculos", "Salário", "Freelance",
+        "Bônus", "Venda", "Aluguel", "Doação", "Empréstimo", "Poupança", "Ações", "FII", "Renda Fixa", "Criptomoedas",
+        "IPTU", "IPVA", "IRPF", "Taxas Bancárias", "Multas", "Condomínio", "Aluguel", "Energia Elétrica", "Água",
+        "Gás", "Internet", "Telefone/Celular", "Supermercado", "Restaurantes", "Lanches", "Cafés", "Farmácia", "Plano de Saúde",
+        "Consultas Médicas", "Exames", "Dentista", "Óculos", "Combustível", "Manutenção Veicular", "SF880", "Faxina", "Limpeza/Manutenção", "e-Social", "Funcionários", "Outros"
+    ]
+
 def gerar_opcoes_natureza():
     return ["Despesa", "Receita"]
 
