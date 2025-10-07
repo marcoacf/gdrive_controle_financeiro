@@ -12,7 +12,7 @@ if df.empty:
     st.info("Nenhum lançamento encontrado.")
 else:
     # Filtra lançamentos não efetivados
-    df_nao_efetivados = df[df["flag_efetivado"].str.upper() == "N"]
+    df_nao_efetivados = df[df["flag_efetivado"].str.upper() == "NÃO"]
 
     st.subheader("🔍 Lançamentos Não Efetivados")
     st.dataframe(df_nao_efetivados)
