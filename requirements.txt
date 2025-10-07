@@ -1,0 +1,9 @@
+streamlit
+pandas
+bcrypt
+streamlit-authenticator
+openpyxl
+matplotlib
+plotly
+pygsheets  # se usar Google Sheets
+PyDrive    # se usar Google Drive
